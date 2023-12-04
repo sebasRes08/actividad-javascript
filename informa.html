@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+   
+    <title>Nuevo Producto</title>
+</head>
+<body>
+    <header>
+        <div class="sistema">
+            <img src="galeria/th.jpg" alt="">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_parent">Inicio</a></li>
+                <li><a href="informa.html" target="_parent">Nuevo Producto</a></li>
+                <li><a href="Productos.html" target="_parent">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="mensajeExito" style="color: green; display: none;">Producto creado</div>
+    <form method="post" action="index.html" id="formulario">
+    
+    <h1>Nuevo Producto</h1>
+    <div>
+    <label>Nombre del producto:</label>
+    <input type="text" name="txtNombre" id="nombre" >
+    <div id="errorNombre" style="color: red;"></div>
+    </div>
+
+    <div>
+    <label>Precio del producto:</label><br>
+    <input type="number" name="txtPrecio" id="precio" >
+    <div id="errorPrecio" style="color: red;"></div>
+</div>
+
+<div>
+    <label>Numero de inventario:</label><br>
+    <input type="number" name="txtNumber" id="inventario"><br><br>
+    <div id="errorInventario" style="color: red;"></div>
+</div>
+    <input type="reset" name="btnCancelar" value="Cancelar">
+    <input type="submit" name="btnCreaProduc" value="Crear Producto">
+
+</form>
+<div id="error" style="color: red;"></div>
+
+<script src="javascript/validacion.js"></script>
+</body>
+</html>
